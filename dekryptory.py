@@ -1,5 +1,5 @@
 class AgeDescriptor():
-  def __get__(self, instance, owner)
+  def __get__(self, instance, owner):
     return instance._age
   def __set__ (self, istance, value):
     if not isinstance(value,int):

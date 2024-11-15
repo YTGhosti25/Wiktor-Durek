@@ -18,7 +18,7 @@ class SalaryDescriptor():
       raise ValueError("wynagrodzenie zbyt niskie")
     instance._salary = value
 
-calss Employee():
+class Employee():
   age = AgeDescriptor()
   salary = SalaryDescriptor()
 

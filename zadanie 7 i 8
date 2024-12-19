@@ -1,0 +1,74 @@
+""" zadanie 7"""
+def draw_square (length):
+    for n in range(length):
+        for i in range(length):
+            print("*",end="")
+        print("")
+
+def draw_hollow_square (length):
+    for n in range(length):
+        for i in range(length):
+            print
+            if n==0 or n==length-1:
+                print("*",end="")
+            elif i==0 or i==length-1:
+                print("*",end="")
+            else:
+                print(" ",end ="")
+        print("")
+
+def draw_hollow_rectangle (height, width):
+    for n in range(height):
+        for i in range(width):
+            print
+            if n==0 or n==height-1:
+                print("*",end="")
+            elif i==0 or i==width-1:
+                print("*",end="")
+            else:
+                print(" ",end ="")
+        print("")
+
+def draw_rectangle (height, width):
+    for n in range(height):
+        for i in range(width):
+            print("*",end="")
+        print("")
+""" zadanie 8"""
+def analyze_input_num (num):
+    sum=0
+    how_many_zeros=0
+    for digit in str(num):
+        if digit=="0":
+            how_many_zeros+=1
+        sum+=int(digit)
+        
+    average=sum/len(str(num))
+
+    print(f"your number has: {len(str(num))} digits")
+    print(f" sum of digits: {sum} average is: {average} and has: {how_many_zeros} '"'0'"' ")
+
+def chessboard (square_len):
+    for i in range(2):
+        for n in range(square_len):
+            for j in range(5):
+                    # print(j," ",n, "modulo: ",(j%2)+(n%2) )
+                    for o in range(square_len):
+                        if ((j%2)+(i%2))%2==0:
+                            print("*",end="")
+                        else:
+                            print("-",end="")
+            print("")
+        
+
+
+
+# analyze_input_num(5005)
+# chessboard(3)
+
+# draw_square(int(input("write length ")))
+# draw_rectangle(int(input("write height ")), int(input("write width ")))
+# draw_hollow_square(int(input("write height ")))
+# draw_hollow_rectangle(int(input("write height ")), int(input("write width ")))
+
+

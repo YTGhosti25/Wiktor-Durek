@@ -1,6 +1,6 @@
 import datetime
 
-# Wery ImpOrtAnt CommenT
+# Wery ImpOrtAnt CommenT. nuh uh, wery not inportsnt
 
 class FlightFullError(Exception):
     """lot pełen nie można jużrezerwować"""

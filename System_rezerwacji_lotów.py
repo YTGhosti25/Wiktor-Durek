@@ -1,5 +1,7 @@
 import datetime
 
+# Wery ImpOrtAnt CommenT
+
 class FlightFullError(Exception):
     """lot pełen nie można jużrezerwować"""
     pass
